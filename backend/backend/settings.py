@@ -27,6 +27,7 @@ ALLOWED_HOSTS = os.environ.get("DJANGO_ALLOWED_HOSTS", "*").split(",")
 # Application definition
 
 INSTALLED_APPS = [
+    'rest_framework',  # Django REST framework
     'corsheaders',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -34,8 +35,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'accounts',
-    'chatgpt',
+    'api',  # api 앱
 ]
 
 MIDDLEWARE = [
